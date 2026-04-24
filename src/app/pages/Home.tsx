@@ -2,7 +2,10 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { Palette, Calendar, Building, Users } from "lucide-react";
+import { Palette, Calendar, Building, Users, Sparkles, Zap, Volume2, UtensilsCrossed, Handshake, Heart, PartyPopper } from "lucide-react";
+import portfolioImg from '../../imports/portfolio.png';
+import collectivePulseImg from '../../imports/Collective_Pulse.png';
+import babyshowerImg from '../../imports/babyshower.png';
 
 export default function Home() {
   const stats = [
@@ -14,9 +17,9 @@ export default function Home() {
 
   const eventImages = [
     {
-      url: "https://images.unsplash.com/photo-1768851244529-39180171a168?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-      alt: "Empty event space with decorated tables",
-      title: "Corporate Gala",
+      url: "http://localhost:5173/src/imports/babyshower.png?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      alt: "Baby shower event",
+      title: "Social",
     },
     {
       url: "https://images.unsplash.com/photo-1768508949307-044ec3c1836a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
@@ -24,37 +27,17 @@ export default function Home() {
       title: "Networking Event",
     },
     {
-      url: "https://images.unsplash.com/photo-1768508947825-0a63f7c46a2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      url: "http://localhost:5173/src/imports/Immersive_wedding.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
       alt: "Woman at formal gathering",
-      title: "Executive Conference",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1769812344142-00c7f6584885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-      alt: "Outdoor wedding ceremony",
-      title: "Wedding Ceremony",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1768508948835-7dbab7ca6d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-      alt: "Formal dinner event",
-      title: "Gala Dinner",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1762968269894-1d7e1ce8894e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
-      alt: "Conference presentation",
-      title: "Business Summit",
+      title: "Immersive Wedding",
     },
   ];
 
   const testimonials = [
     {
-      name: "Jennifer Martinez",
-      role: "CEO, Tech Innovations",
-      text: "Scripted Rituals transformed our annual conference into an unforgettable experience. Their attention to detail and professionalism exceeded all expectations.",
-    },
-    {
-      name: "David Thompson",
-      role: "Wedding Client",
-      text: "Our wedding day was absolutely perfect thanks to the amazing team. They handled every detail with care and made our dream celebration come true.",
+      name: "Meenakshi Jain",
+      role: "Happy customer",
+      text: "I hired Scripted Rituals for my baby shower and wow! The event was a great success. Kavya and Rajatha made everything so easy, simple, and stress-free. They were very diligent in getting all of my ideas together and ensuring the day turned out exactly how I envisioned. They worked until late at night on the setup and went above and beyond. The room looked amazing and everyone loved it! Thank you for taking the load off my shoulders; I loved every moment and will definitely use this team again.",
     },
   ];
 
@@ -74,7 +57,7 @@ export default function Home() {
               Every event has a script. We bring yours to life.
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl mb-8 opacity-90">
-              We partner with you to author every detail of your event. From the first sketch to the final curtain, we plan, design, and script bespoke experiences that bring your vision to life.
+              From the first sketch to the final curtain, we plan, design, and script bespoke experiences that bring your vision to life.
             </p>
             <Link to="/contact">
               <Button
@@ -91,9 +74,9 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center text-white mb-12">Types of Events We Specialize In</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 hover:bg-white/20 transition-all min-h-24 flex flex-col justify-center text-center">
+              <Sparkles className="w-8 h-8 mx-auto mb-2 text-white" />
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Creative</div>
               <div className="text-xs sm:text-sm md:text-base lg:text-lg opacity-90 space-y-1">
                 <div>Event Concept</div>
@@ -103,6 +86,11 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 hover:bg-white/20 transition-all min-h-24 flex flex-col justify-center text-center">
+              <div className="flex justify-center gap-2 mb-2">
+                <Zap className="w-5 h-5 text-white" />
+                <Volume2 className="w-5 h-5 text-white" />
+                <UtensilsCrossed className="w-5 h-5 text-white" />
+              </div>
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Production</div>
               <div className="text-xs sm:text-sm md:text-base lg:text-lg opacity-90 space-y-1">
                 <div>Catering management</div>
@@ -112,6 +100,10 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 hover:bg-white/20 transition-all min-h-24 flex flex-col justify-center text-center">
+              <div className="flex justify-center gap-2 mb-2">
+                <Users className="w-5 h-5 text-white" />
+                <Handshake className="w-5 h-5 text-white" />
+              </div>
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Corporate</div>
               <div className="text-xs sm:text-sm md:text-base lg:text-lg opacity-90 space-y-1">
                 <div>Conferences</div>
@@ -121,6 +113,10 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 hover:bg-white/20 transition-all min-h-24 flex flex-col justify-center text-center">
+              <div className="flex justify-center gap-2 mb-2">
+                <Users className="w-5 h-5 text-white" />
+                <Heart className="w-5 h-5 text-white" />
+              </div>
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Social</div>
               <div className="text-xs sm:text-sm md:text-base lg:text-lg opacity-90 space-y-1">
                 <div>Weddings</div>
@@ -138,25 +134,38 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1768508950790-3bbdfe3973c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-                alt="Event gathering"
-                className="rounded-lg w-full h-64 object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1768508947591-b650dacc70a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-                alt="Formal dinner table"
-                className="rounded-lg w-full h-64 object-cover"
+              <img
+                src={portfolioImg}
+                alt="Portfolio preview"
+                className="rounded-lg w-full h-64 object-cover md:col-span-2"
               />
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl mb-6">Embark On A Visual Journey Through Our Portfolio</h2>
               <p className="text-base md:text-lg text-gray-700 mb-6">
-                Discover our portfolio of exceptional events, each crafted with meticulous
-                attention to detail and creative excellence. From corporate conferences to
-                elegant weddings, we transform spaces into unforgettable experiences.
+               We partner with brands and individuals to design the atmosphere for life’s most important moments. Below, explore the various categories of events we produce and browse our upcoming calendar of sessions. Discover the textures, moods, and precision that define our signature style.
               </p>
-              <Link to="/upcoming-events">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Collective Pulse Subsection */}
+      <section className="mt-12">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="bg-white rounded-lg shadow p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
+            <img
+              src={collectivePulseImg}
+              alt="The Collective Pulse event"
+              className="w-full max-w-xs md:max-w-xs rounded-lg object-cover mb-6 md:mb-0"
+            />
+            <div className="flex-1">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">The Collective Pulse</h3>
+              <h4 className="text-lg md:text-xl font-semibold mb-4 text-gray-700">Our signature series connecting the community with experts.</h4>
+              <p className="text-base md:text-lg text-gray-600">
+                Knowledge is the best medicine. Our sessions bring medical specialists directly to you to demystify complex medical topics. Listen to a deep-dive presentation on a specific area of expertise, followed by an open Q&A where your voice is heard and your questions are answered.
+              </p><br/>
+            <Link to="/upcoming-events">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white border-0"
@@ -218,7 +227,7 @@ export default function Home() {
               Hear what our clients say about their experience working with us
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-5xl mx-auto">
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
