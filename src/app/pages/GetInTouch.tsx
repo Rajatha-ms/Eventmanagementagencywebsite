@@ -34,25 +34,20 @@ export default function GetInTouch() {
     {
       icon: Mail,
       title: "Email",
-      detail: "info@scriptedrituals.com",
-      link: "mailto:info@scriptedrituals.com",
+      detail: "contact@scriptedrituals.com",
+      link: "mailto:contact@scriptedrituals.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      detail: "(555) 123-4567",
+      detail: "(44) 123-4567",
       link: "tel:+15551234567",
     },
-    {
-      icon: MapPin,
-      title: "Address",
-      detail: "123 Event Street, City, State 12345",
-      link: null,
-    },
+
     {
       icon: Clock,
       title: "Business Hours",
-      detail: "Mon-Fri: 9AM-6PM, Sat: 10AM-4PM",
+      detail: "Mon-Fri: 9AM-6PM",
       link: null,
     },
   ];
@@ -114,7 +109,7 @@ export default function GetInTouch() {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="(555) 123-4567"
+                        placeholder="(44) 123-4567"
                         className="mt-1"
                       />
                     </div>
@@ -201,10 +196,6 @@ export default function GetInTouch() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl mb-3">Why Choose Scripted Rituals?</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start">
-                      <div className="w-1.5 h-1.5 rounded-full mr-2 mt-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      10+ years of event management experience
-                    </li>
                     <li className="flex items-start">
                       <div className="w-1.5 h-1.5 rounded-full mr-2 mt-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
                       Personalized service tailored to your needs

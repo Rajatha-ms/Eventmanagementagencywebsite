@@ -26,10 +26,8 @@ export default function AboutUs() {
   ];
 
   const team = [
-    { name: "Sarah Mitchell", role: "Founder & CEO", specialty: "Corporate Events" },
-    { name: "Michael Chen", role: "Creative Director", specialty: "Event Design" },
-    { name: "Emily Rodriguez", role: "Operations Manager", specialty: "Logistics" },
-    { name: "David Thompson", role: "Client Relations", specialty: "Customer Experience" },
+    { name: "Rajatha", role: "Co-Founder" },
+    { name: "Kavya", role: "Co-Founder" },
   ];
 
   return (
@@ -51,23 +49,86 @@ export default function AboutUs() {
             <h2 className="text-3xl lg:text-4xl mb-6">Our Story</h2>
             <div className="space-y-4 text-lg text-gray-700">
               <p>
-                Founded in 2015, Scripted Rituals was born from a simple belief: every event
-                deserves to be extraordinary. What started as a small team of passionate event
-                enthusiasts has grown into a full-service event management company known for
-                transforming visions into reality.
-              </p>
-              <p>
-                Over the years, we've had the privilege of creating memorable experiences for
-                hundreds of clients, from intimate gatherings to large-scale corporate events.
-                Our approach combines creative innovation with meticulous planning, ensuring
-                that every detail is perfect.
-              </p>
-              <p>
-                Today, we're proud to be recognized as industry leaders, but we've never lost
-                sight of what matters most: creating genuine connections and unforgettable
-                moments for our clients and their guests.
+                Every great agency starts with a single, defining celebration. For us, that foundation was our very first baby shower. Designed with meticulous attention to detail, it proved how thoughtful styling and a warm atmosphere could transform a space into a lasting memory. That success set the DNA for Scripted Rituals: a commitment to designing elegant, purposeful experiences that bring people together.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Founders */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl mb-6">The Founders: Strategic Execution meets People-First Design</h2>
+            <div className="space-y-4 text-lg text-gray-700">
+              <p>
+                Rajatha and Kavya bring a unique synergy of professional leadership to the world of event design.
+              </p>
+              <p>
+                Rajatha thrives on precision and high-level analytical oversight. She ensures that every event is anchored by seamless timelines and optimized logistics, managing every moving part to perfection. Kavya specializes in the human experience and the art of connection. She understands how to design environments that foster engagement and meaningful interaction, ensuring every event—whether social or educational—is driven by a clear, impactful narrative.
+              </p>
+              <p>
+                Together, they apply executive-grade stakeholder management and operational excellence to "script" perfect events. This professional foundation ensures that every production is handled with a level of accountability and strategic rigor that is rare in the creative industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Philosophy */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl mb-6">Our Philosophy: Responsive to Modern Times</h2>
+            <div className="space-y-4 text-lg text-gray-700">
+              <p>
+                At Scripted Rituals, we don't just design for the past; we design for the present. We focus on what is truly needed in today's landscape—responding to the shifting priorities of our community.
+              </p>
+              <p>
+                Whether it is addressing the critical need for accessible medical clarity through specialized health forums, or reflecting the philosophy of today's youth who value the joy and connection of a "wedding" experience without the traditional constraints, we adapt. We believe events should evolve with the people they serve, prioritizing authentic experience and real-world relevance over outdated formalities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bespoke Offerings */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl mb-6">Bespoke Offerings: A Versatile Portfolio</h2>
+            <div className="space-y-4 text-lg text-gray-700">
+              <p>
+                While our expertise spans the full spectrum of event design, we specialize in high-concept productions where atmosphere meets authority. Our work is best reflected through our signature pillars:
+              </p>
+              <div className="mt-6 space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-purple-600">The Collective Pulse</h3>
+                  <p>An example of our commitment to modern health needs. We coordinate with medical specialists to bridge the gap between experts and the community, demystifying complex topics through structured presentations and meaningful dialogue.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-purple-600">Immersive Social & Milestone Events</h3>
+                  <p>We celebrate life's big transitions—from birthdays and anniversaries to baby showers. We also pioneer modern rituals, like high-energy "Fake Weddings," which capture the magic of celebration while focusing entirely on guest connection and joy.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-purple-600">Corporate & Brand Partnerships</h3>
+                  <p>We collaborate with brands to translate corporate values into physical realities. From product launches to private galas, we ensure every texture and logistical touchpoint aligns with a high-standard vision.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Scripted Rituals Promise */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl mb-6">The Scripted Rituals Promise</h2>
+            <p className="text-lg text-gray-700">
+              We partner with you to take the weight off your shoulders. We don't just host events; we design the atmosphere for life's most important moments through meticulous project management and bespoke execution.
+            </p>
           </div>
         </div>
       </section>
@@ -105,8 +166,7 @@ export default function AboutUs() {
                 <CardContent className="pt-8 pb-6">
                   <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"></div>
                   <h3 className="text-xl mb-1">{member.name}</h3>
-                  <p className="mb-2 text-purple-600">{member.role}</p>
-                  <p className="text-sm text-gray-600">{member.specialty}</p>
+                  <p className="text-purple-600">{member.role}</p>
                 </CardContent>
               </Card>
             ))}

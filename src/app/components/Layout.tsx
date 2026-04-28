@@ -1,6 +1,6 @@
 import { Outlet, Link, useLocation } from "react-router";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
 
 export default function Layout() {
@@ -110,19 +110,29 @@ export default function Layout() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-white opacity-90">
+                <li>Creative</li>
+                <li>Production</li>
                 <li>Corporate Events</li>
-                <li>Weddings</li>
                 <li>Social Events</li>
-                <li>Event Design</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-white opacity-90">
-                <li>info@scriptedrituals.com</li>
+                <li>contact@scriptedrituals.com</li>
                 <li>(555) 123-4567</li>
-                <li>123 Event Street</li>
-                <li>City, State 12345</li>
+                <li>London</li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/scriptedrituals/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 hover:underline"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    Instagram
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

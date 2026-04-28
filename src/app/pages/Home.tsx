@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { Palette, Calendar, Building, Users, Sparkles, Zap, Volume2, UtensilsCrossed, Handshake, Heart, PartyPopper } from "lucide-react";
+import { Palette, Calendar, Building, Users, Group, Sparkles, Zap, Volume2, UtensilsCrossed, Handshake, Heart, PartyPopper } from "lucide-react";
 import portfolioImg from '../../imports/portfolio.png';
 import collectivePulseImg from '../../imports/Collective_Pulse.png';
 import babyshowerImg from '../../imports/babyshower.png';
@@ -29,7 +29,7 @@ export default function Home() {
     {
       url: "http://localhost:5173/src/imports/Immersive_wedding.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
       alt: "Woman at formal gathering",
-      title: "Immersive Wedding",
+      title: "The 'Fake' Wedding",
     },
   ];
 
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 hover:bg-white/20 transition-all min-h-24 flex flex-col justify-center text-center">
               <div className="flex justify-center gap-2 mb-2">
-                <Users className="w-5 h-5 text-white" />
+                <Group className="w-5 h-5 text-white" />
                 <Handshake className="w-5 h-5 text-white" />
               </div>
               <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2">Corporate</div>
@@ -141,9 +141,9 @@ export default function Home() {
               />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl mb-6">Embark On A Visual Journey Through Our Portfolio</h2>
+              <h2 className="text-3xl md:text-4xl mb-6">From Vision to Reality: Our Curated Approach</h2>
               <p className="text-base md:text-lg text-gray-700 mb-6">
-               We partner with brands and individuals to design the atmosphere for life’s most important moments. Below, explore the various categories of events we produce and browse our upcoming calendar of sessions. Discover the textures, moods, and precision that define our signature style.
+               At Scripted Rituals, we partner with individuals and brands to translate unique visions into realities. We believe every event is a narrative waiting to be told. Whether we are designing an intimate social celebration or a high-impact corporate gathering, we blend meticulous precision with unparalleled atmosphere to create moments that linger. Explore our specialized event pillars and signature series below.
               </p>
             </div>
           </div>
@@ -159,11 +159,15 @@ export default function Home() {
               alt="The Collective Pulse event"
               className="w-full max-w-xs md:max-w-xs rounded-lg object-cover mb-6 md:mb-0"
             />
+            
             <div className="flex-1">
+                                      <p className="text-base md:text-lg text-gray-700 mb-6">
+               OUR SIGNATURE SERIES
+              </p>
               <h3 className="text-2xl md:text-3xl font-bold mb-2">The Collective Pulse</h3>
-              <h4 className="text-lg md:text-xl font-semibold mb-4 text-gray-700">Our signature series connecting the community with experts.</h4>
+              <h4 className="text-lg md:text-xl font-semibold mb-4 text-gray-700">Our signature series connecting the community with medical specialists.</h4>
               <p className="text-base md:text-lg text-gray-600">
-                Knowledge is the best medicine. Our sessions bring medical specialists directly to you to demystify complex medical topics. Listen to a deep-dive presentation on a specific area of expertise, followed by an open Q&A where your voice is heard and your questions are answered.
+                Knowledge is the best medicine. Our sessions bring medical experts directly to you to demystify complex topics. Listen to a deep-dive presentation on a specific area of expertise, followed by an open Q&A where your voice is heard and your questions are answered.
               </p><br/>
             <Link to="/upcoming-events">
                 <Button
