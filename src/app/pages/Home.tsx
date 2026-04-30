@@ -6,6 +6,7 @@ import { Palette, Calendar, Building, Users, Group, Sparkles, Zap, Volume2, Uten
 import portfolioImg from '../../imports/portfolio.png';
 import collectivePulseImg from '../../imports/Collective_Pulse.png';
 import babyshowerImg from '../../imports/babyshower.png';
+import immersiveWeddingImg from '../../imports/Immersive_wedding.jpg';
 
 export default function Home() {
   const stats = [
@@ -17,7 +18,7 @@ export default function Home() {
 
   const eventImages = [
     {
-      url: "http://localhost:5173/src/imports/babyshower.png?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      url: babyshowerImg,
       alt: "Baby shower event",
       title: "Social",
     },
@@ -27,7 +28,7 @@ export default function Home() {
       title: "Networking Event",
     },
     {
-      url: "http://localhost:5173/src/imports/Immersive_wedding.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      url: immersiveWeddingImg,
       alt: "Woman at formal gathering",
       title: "The 'Fake' Wedding",
     },
