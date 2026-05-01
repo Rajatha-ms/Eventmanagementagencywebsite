@@ -7,6 +7,7 @@ import portfolioImg from '../../imports/portfolio.png';
 import collectivePulseImg from '../../imports/Collective_Pulse.png';
 import babyshowerImg from '../../imports/babyshower.png';
 import immersiveWeddingImg from '../../imports/Immersive_wedding.jpg';
+import heroImg from '../../imports/heroimage.png';
 
 export default function Home() {
   const stats = [
@@ -23,7 +24,7 @@ export default function Home() {
       title: "Social",
     },
     {
-      url: "https://images.unsplash.com/photo-1768508949307-044ec3c1836a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
+      url: heroImg,
       alt: "People at formal event",
       title: "Networking Event",
     },
