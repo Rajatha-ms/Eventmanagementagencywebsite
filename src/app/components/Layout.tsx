@@ -2,7 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { Button } from "./ui/button";
 import { Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
-import companyLogo from './imports/heroimage.png';
+import companyLogo from '../../imports/LogoOriginal.png';
 
 export default function Layout() {
   const location = useLocation();
@@ -29,7 +29,7 @@ export default function Layout() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-500 to-orange-500 bg-clip-text text-transparent">Scripted Rituals</div>
+              <img src={companyLogo} alt="Scripted Rituals Logo" className="h-18 w-auto" /> 
             </Link>
 
             {/* Desktop Navigation */}
