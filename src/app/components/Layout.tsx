@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { Button } from "./ui/button";
 import { Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
+import companyLogo from './imports/heroimage.png';
 
 export default function Layout() {
   const location = useLocation();

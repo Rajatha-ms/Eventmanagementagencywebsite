@@ -24,7 +24,7 @@ export default function Home() {
       title: "Social",
     },
     {
-      url: heroImg,
+      url: "https://images.unsplash.com/photo-1768508949307-044ec3c1836a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800",
       alt: "People at formal event",
       title: "Networking Event",
     },
@@ -49,7 +49,7 @@ export default function Home() {
       <section
         className="relative text-white py-32 lg:py-48 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1768508948485-a7adc1f3427f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroImg})`,
         }}
       >
         
